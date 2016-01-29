@@ -9,6 +9,4 @@ RUN apt-get install -y mfi-beta
 RUN apt-get clean
 EXPOSE 6443 6080
 
-
-
 CMD ["/usr/lib/jvm/java-6-openjdk-amd64/jre/bin/java", "-Xmx1024M", "-jar", "/usr/lib/mfi/lib/ace.jar", "start"]
